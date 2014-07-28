@@ -34,3 +34,8 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+*.p12
+*.swf
+*.apk
+src/com/mrcrayfish/game/Game-app.xml

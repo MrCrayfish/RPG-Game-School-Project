@@ -1,0 +1,1 @@
+﻿package {	public class PropWoodenWall extends GameObject	{		public function PropWoodenWall()		{			super();			this.setSprite(GameSprite.wooden_door.getSprite());			this.setSolid(false);		}	}}

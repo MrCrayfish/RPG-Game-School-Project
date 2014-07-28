@@ -1,0 +1,1 @@
+﻿package  {		public class SpriteWoodenWall extends GameSprite{				public var walls:Array;		public function SpriteWoodenWall() {			loadWalls();			super(walls[0]);		}				public function loadWalls():void		{					}	}	}
