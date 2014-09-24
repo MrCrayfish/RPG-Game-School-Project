@@ -1,10 +1,1 @@
-﻿package 
-{
-	public class ObjectWoodenDoor extends Objects
-	{
-		public function ObjectWoodenDoor():void
-		{
-			super(GameSprite.wooden_door.getSprite(), false);
-		}
-	}
-}
+﻿package {	import Overlay;		public class ObjectWoodenDoor extends Overlay	{		private var exitData:ExitData;				public function ObjectWoodenDoor():void		{			super(GameSprite.wooden_door.getSprite(), false);		}				public function setExit(level:Level, x:int, y:int):void		{			this.exitData = new ExitData(level, x, y);		}				override public function onUse(player:Player)		{			trace(player);			trace(exitData);			trace(exitData.getLevel());			trace(exitData.getX());			trace(exitData.getY());			player.teleport(exitData.getLevel(), exitData.getX(), exitData.getY());		}				override public function isSelectable():Boolean		{			return true;		}	}}
